@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(158, 161, 161);
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    transition: all .5s;
+}
+.caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    background-color: black;
+    transform: translateY(100%);
+    width: 100%;
+    height: 30%;
+    transition: all .5s;
+}
+
+.caption h1{
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.caption p{
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.container:hover img{
+    transform: translateY(-30%);
+}
+.container:hover .caption{
+    transform: translateY(0);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<img src="./Stan _ The Man _ Lee_ (Tribute ).jpeg">
+<div class="caption">
+    <h1>See You On the Other side</h1>
+    <p>SPIDERMAN</p>
+</div>
+
+    </div>
+</body>
+</html>
